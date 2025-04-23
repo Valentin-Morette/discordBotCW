@@ -14,6 +14,6 @@ This command will display the user's statistics and ranking on Codewars.
 
 To install CodewarsStatsBOT on your Discord server, you can click on the following link:
 
-[Add CodewarsStatsBOT to your server](https://discord.com/api/oauth2/authorize?client_id=1050710452595855430&permissions=2048&scope=bot)
+(https://discord.com/api/oauth2/authorize?client_id=1050710452595855430&permissions=2048&scope=bot)
 
 Once the link is opened, you can add CodewarsStatsBOT to your Discord server by following the on-screen instructions.
