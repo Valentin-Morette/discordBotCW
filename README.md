@@ -1,19 +1,19 @@
 # CodewarsStatsBOT
 
-CodewarsStatsBOT est un bot Discord qui permet aux utilisateurs de consulter leur statistiques et leur classement sur Codewars.
+CodewarsStatsBOT is a Discord bot that allows users to check their statistics and ranking on Codewars.
 
-## Utilisation
+## Usage
 
-Pour utiliser CodewarsStatsBOT, vous pouvez utiliser la commande suivante :
+To use CodewarsStatsBOT, you can use the following command:
 
-- /stats PseudoCodewars
+- `/stats CodewarsUsername`
 
-Cette commande affichera les statistiques et le classement de l'utilisateur sur Codewars.
+This command will display the user's statistics and ranking on Codewars.
 
 ## Installation
 
-Pour installer CodewarsStatsBOT sur votre serveur Discord, vous pouvez cliquer sur ce lien :
+To install CodewarsStatsBOT on your Discord server, you can click on the following link:
 
-https://discord.com/api/oauth2/authorize?client_id=1050710452595855430&permissions=2048&scope=bot
+[Add CodewarsStatsBOT to your server](https://discord.com/api/oauth2/authorize?client_id=1050710452595855430&permissions=2048&scope=bot)
 
-Une fois le lien ouvert, vous pourrez ajouter CodewarsStatsBOT à votre serveur Discord en suivant les instructions affichées à l'écran.
+Once the link is opened, you can add CodewarsStatsBOT to your Discord server by following the on-screen instructions.
