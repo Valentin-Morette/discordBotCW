@@ -1,55 +1,12 @@
 import { EmbedBuilder, AttachmentBuilder, Client, GatewayIntentBits } from 'discord.js';
-import { Routes } from 'discord-api-types/v10';
-import { REST } from '@discordjs/rest';
+import { commands } from './variables.js';
+import { slashCommande, capitalize, compare } from './functions.js';
 import dotenv from 'dotenv';
 import axios from 'axios';
 
 dotenv.config();
 
-function capitalize(word) {
-	return word.charAt(0).toUpperCase() + word.slice(1);
-}
-
-function compare(a, b) {
-	if (a[1].score < b[1].score) return 1;
-	if (a[1].score > b[1].score) return -1;
-	return 0;
-}
-
-function slashCommande(commands) {
-	const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
-
-	(async () => {
-		try {
-			console.log('Starting slash commands registration.');
-
-			await rest.put(Routes.applicationCommands(process.env.IDAPPLICATION), {
-				body: commands,
-			});
-
-			console.log('Slash commands registered successfully!');
-		} catch (error) {
-			console.error(error);
-		}
-	})();
-}
-
-const commandsCwStats = [
-	{
-		name: 'stats',
-		description: 'Displays the Codewars user stats',
-		options: [
-			{
-				name: 'username',
-				type: 3,
-				description: 'Codewars username',
-				required: true,
-			},
-		],
-	},
-];
-
-slashCommande(commandsCwStats);
+slashCommande(commands);
 
 const clientCw = new Client({
 	intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent],
